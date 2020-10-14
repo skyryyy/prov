@@ -33,14 +33,20 @@ namespace prov
             {
                 shot = Console.ReadLine();
 
-                if (coord <= 10)
-                    Console.WriteLine("Miss");
+                if (coord > 10)
+                {
+                    Console.WriteLine("för stort");
+                }
 
-                if (coord >= 10)
-                    Console.WriteLine("Det är fortfarande för stort.");
+                if (coord < 10)
+                {
+                    Console.WriteLine("Miss");
+                }
 
                 if (coord == 5 && coord == 3)
+                {
                     Console.WriteLine("Near miss");
+                }
             }
 
             if (coord == 4)
